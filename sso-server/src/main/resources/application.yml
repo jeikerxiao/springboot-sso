@@ -1,0 +1,10 @@
+security:
+  oauth2:
+    client:
+      client-id: clientid
+      client-secret: clientsecret
+      scope: read,write
+      auto-approve-scopes: '.*'
+  user:
+    name: admin
+    password: 123456
