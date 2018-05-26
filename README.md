@@ -4,7 +4,7 @@ spring boot sso 单点登录。
 
 项目依赖：
 
-```gradle
+```java
 compile('org.springframework.security.oauth:spring-security-oauth2')
 compile('org.springframework.boot:spring-boot-starter-security')
 compile('org.springframework.boot:spring-boot-starter-web')
@@ -20,7 +20,7 @@ testCompile('org.springframework.security:spring-security-test')
 
 服务器配置：
 
-```ymal
+```java
 server:
   port: 8888
 security:
@@ -77,7 +77,7 @@ client 分为两个项目
 
 客户端配置基本相同：
 
-```ymal
+```java
 server:
   port: 8081
 security:
@@ -118,7 +118,6 @@ public class UserController {
         return Collections.singletonMap("user", user.getName());
     }
 }
-
 ```
 
 
