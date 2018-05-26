@@ -1,3 +1,5 @@
+server:
+  port: 8888
 security:
   oauth2:
     client:
