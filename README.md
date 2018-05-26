@@ -122,3 +122,28 @@ public class UserController {
 
 
 两个项目基本相同。
+
+# 运行
+
+## 1.启动项目
+
+1. sso-server
+2. sso-client1
+3. sso-client2
+
+## 2.浏览器访问
+
+http://localhost:8081/client1
+
+## 3.浏览器自动跳转到sso-server进行登录验证
+
+* 输入账号：admin
+* 输入密码：123456
+
+## 4.返回响应结果
+
+```javascript
+{
+	user: "admin"
+}
+``` 
